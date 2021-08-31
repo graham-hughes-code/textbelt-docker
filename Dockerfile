@@ -1,4 +1,4 @@
-FROM tarampampam/node:13.1-alpine
+FROM balenalib/raspberry-pi-alpine-node:12.9.1
 
 LABEL url.docker="https://hub.docker.com/r/hexeth/textbelt-docker" \
       url.github="https://github.com/hexeth/textbelt-docker" \
@@ -16,6 +16,8 @@ ENV \
   FROM_ADDRESS="email@emailaddress.com" \
   REALNAME="yourname" \
   MAIL_DEBUG="false"
+
+RUN apk --no-cache add git
 
 RUN git clone https://github.com/typpo/textbelt.git
 
