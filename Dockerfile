@@ -38,7 +38,7 @@ RUN echo '#!/bin/bash' >> ~/startup.sh  \
   && echo "sed -i \"s|'\\\"Jane Doe\\\"|process.env.REALNAME|\" /textbelt/lib/config.js"  >> ~/startup.sh \
   && echo "sed -i \"s|<jane.doe@example.com>|+' <' + process.env.FROM_ADDRESS + '>|\" /textbelt/lib/config.js"  >> ~/startup.sh \
   && echo "sed -i \"s|debugEnabled: false|debugEnabled: process.env.MAIL_DEBUG|\" /textbelt/lib/config.js"  >> ~/startup.sh \
-  && echo "nodejs /textbelt/server/app.js &" >> ~/startup.sh \
+  && echo "node /textbelt/server/app.js &" >> ~/startup.sh \
   && echo "trap : TERM INT; (while true; do sleep 1000; done) & wait" >> ~/startup.sh
 
 CMD exec /bin/sh -c "~/startup.sh"
