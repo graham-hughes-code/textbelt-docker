@@ -1,5 +1,5 @@
 # Textbelt-Docker
-A Node Alpine based docker to easily get [textbelt](https://github.com/typpo/textbelt) running and send outgoing SMS messages through email-to-SMS gateways.
+A Raspberry Pi Alpine Node based docker to easily get [textbelt](https://github.com/typpo/textbelt) running and send outgoing SMS messages through email-to-SMS gateways.
 
 ## INSTALLATION
 ### Run
@@ -24,7 +24,7 @@ version: '3'
 
 services:
   textbelt:
-    image: hexeth/textbelt-docker
+    image:
     container_name: textbelt
     restart: unless-stopped
     ports:
