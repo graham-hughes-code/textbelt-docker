@@ -2,7 +2,7 @@ version: '3'
 
 services:
   textbelt:
-    image: hexeth/textbelt-docker
+    image: 
     container_name: textbelt
     restart: unless-stopped
     ports:
