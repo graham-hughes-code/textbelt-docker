@@ -2,7 +2,7 @@ version: '3'
 
 services:
   textbelt:
-    image: 
+    image: grahamhughescode/textbelt-docker-rpi
     container_name: textbelt
     restart: unless-stopped
     ports:
