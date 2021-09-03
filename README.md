@@ -15,7 +15,7 @@ docker run --name=textbelt \
 -e MAIL_DEBUG=false \
 -e SECURE_CONNECTION=true \
 --restart unless-stopped \
-hexeth/textbelt-docker
+grahamhughescode/textbelt-docker-rpi
 ```
 
 ### Compose
@@ -24,7 +24,7 @@ version: '3'
 
 services:
   textbelt:
-    image:
+    image: grahamhughescode/textbelt-docker-rpi
     container_name: textbelt
     restart: unless-stopped
     ports:
