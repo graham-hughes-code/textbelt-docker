@@ -1,5 +1,5 @@
 # Textbelt-Docker
-A Raspberry Pi Alpine Node based docker to easily get [textbelt](https://github.com/typpo/textbelt) running and send outgoing SMS messages through email-to-SMS gateways.
+A Raspberry Pi Alpine Node based docker image to easily get [textbelt](https://github.com/typpo/textbelt) running and send outgoing SMS messages through email-to-SMS gateways.
 
 ## INSTALLATION
 ### Run
